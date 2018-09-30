@@ -3,6 +3,7 @@
 	<PawnKindDef parentName="OutlanderBase">
 		<defName>TYR_Drael</defName>
 		<race>Human</race>
+		<label>Drael</label>
 		<combatPower>30</combatPower>
 		<itemQuality>Normal</itemQuality>
 		<backstoryCategories>
@@ -11,5 +12,9 @@
 		<apparelTags>
 		<li>TYD_DraelApparel</li>
 		</apparelTags>
+		<apparelMoney>
+			<min>600</min>
+			<max>800</max>
+		</apparelMoney>
 	</PawnKindDef>
 </Defs>

@@ -41,13 +41,10 @@
 				<li>Shell</li>
 			</layers>
 			<tags>
-				<li>IndustrialBasic</li>
-				<li>Neolithic</li>
 				<li>TYD_DraelApparel</li>
 			</tags>
 			<defaultOutfitTags>
-				<li>Worker</li>
-				<li>Soldier</li>
+				<li>Drael</li>
 			</defaultOutfitTags>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
