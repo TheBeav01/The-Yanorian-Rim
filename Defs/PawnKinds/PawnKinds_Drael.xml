@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<PawnKindDef parentName="OutlanderBase">
+		<defName>TYR_Drael</defName>
+		<race>Human</race>
+		<combatPower>30</combatPower>
+		<itemQuality>Normal</itemQuality>
+		<backstoryCategories>
+			<li>Civil</li>
+		</backstoryCategories>
+		<apparelTags>
+		<li>TYD_DraelApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+</Defs>
