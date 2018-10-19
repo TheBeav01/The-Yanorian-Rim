@@ -2,8 +2,9 @@
 <Defs>
 
 	<ThingDef ParentName="BasePawn">
-		<defName>Drael</defName>
+		<defName>TYR_Drael</defName>
 		<label>Drael</label>
+		<description>A race of newly born beings who dabble in shadowmancy with their dragon partners</description>
 		<statBases>
       <MarketValue>1800</MarketValue>
       <MoveSpeed>4.6</MoveSpeed>
