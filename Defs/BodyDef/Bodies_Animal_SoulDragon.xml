@@ -2,7 +2,7 @@
 <Defs>
 	<!-- Rippped from core  -->
 	<BodyDef>
-		<defName>TYR_SoulDragon</defName>
+		<defName>TYR_SoulDragonBody</defName>
 		<label>Soul Dragon</label>
 		<corePart>
 			<def>Body</def>
@@ -10,8 +10,12 @@
 			<depth>Outside</depth>
 			<parts>
 				<li>
-					<def>Tail</def>
-					<coverage>0.07</coverage>
+					<def>TYR_Tail</def>
+					<customLabel>Tail</customLabel>
+					<coverage>0.10</coverage>
+					<groups>
+						<li>TailAttack</li>
+					</groups>
 				</li>
 				<li>
 					<def>Spine</def>
@@ -174,6 +178,7 @@
 						</li>
 					</parts>
 				</li>
+
 			</parts>
 		</corePart>
 	</BodyDef>

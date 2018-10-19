@@ -2,7 +2,6 @@
 <Defs>
 	<PawnKindDef parentName="OutlanderBase">
 		<defName>TYR_Drael</defName>
-		<!--Todo: Change race	-->
 		<race>Drael</race>
 		<label>Drael</label>
 		<combatPower>30</combatPower>
