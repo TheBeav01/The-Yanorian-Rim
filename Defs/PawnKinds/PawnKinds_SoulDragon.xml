@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PawnKindDef parentName="AnimalKindBase">
+		<defName>TYR_SoulDragon</defName>
+		<label>souldragon</label>
+		<labelPlurals>souldragons</labelPlurals>
+		<race>TYR_SD</race>
+		<combatPower>50</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Textures/Things/Pawns/Animals/Soul_Dragon</texPath>
+					<drawSize>1</drawSize>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Textures/Things/Pawns/Animals/Soul_Dragon</texPath>
+					<drawSize>1.2</drawSize>
+					<shadowData>
+						<volume>(0.3,0.3,0.3)</volume>
+						<offset>(0.0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Textures/Things/Pawns/Animals/Soul_Dragon</texPath>
+					<drawSize>1.6</drawSize>
+					<shadowData>
+						<volume>(0.4,0.4,0.4)</volume>
+						<offset>(0.0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
