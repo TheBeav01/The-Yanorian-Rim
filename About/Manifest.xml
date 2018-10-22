@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Manifest>
 	<identifier>TheYanorianRim</identifier>
-	<version>0.0.1</version>
+	<version>0.0.2</version>
 	<!-- TODO: Dependencies -->
-	<manifestUri>https://github.com/TheBeav01/The-Yanorian-Rim/tree/master/About/Manifest.xml</manifestUri>
+	<manifestUri>https://raw.githubusercontent.com/TheBeav01/The-Yanorian-Rim/master/About/Manifest.xml</manifestUri>
 	<downloadUri>https://github.com/TheBeav01/The-Yanorian-Rim</downloadUri>
 </Manifest>
