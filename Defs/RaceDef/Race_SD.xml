@@ -2,9 +2,9 @@
 <Defs>
 
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>TYR_SD</defName>
-		<label>Soul Dragon</label>
-		<description>Soul Dragons are an intelligent race of metal dragons. They bond with their Drael partners on birth, and do not part with them until their deaths.
+		<defName>TYR_SD_RACE</defName>
+		<label>Soul_Dragon</label>
+		<description>Soul Dragons are an intelligent race of metal dragons. They bond with their Drael partners on birth, and do not part with them until their deaths.</description>
 		<statBases>
 			<MoveSpeed>4.5</MoveSpeed>
 			<MarketValue>1000</MarketValue>
@@ -24,37 +24,69 @@
 		  <manhunterOnDamageChance>0.50</manhunterOnDamageChance>
 			<body>TYR_SoulDragonBody</body>
 			<leatherDef>Leather_Bird</leatherDef>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.00</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
 		</race>
 		<tools>
 			<li>
-				<label>claws</label>
-				<capacities>Scratch</capacities>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
 				<power>8</power>
 				<cooldownTime>1.2</cooldownTime>
-				<linkedBodyParts>Feet</linkedBodyParts>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
 				<surpriseAttack>
 					<extraMeleeDamages>
 						<li>
 							<def>Stun</def>
 							<amount>10</amount>
 						</li>
+						</extraMeleeDamages>
 					</surpriseAttack>
 			</li>
-					<li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+						</extraMeleeDamages>
+					</surpriseAttack>
+			</li>
+			<li>
 				<label>maw</label>
 				<capacities>
 					<li>Bite</li>
 				</capacities>
 				<power>12</power>
 				<cooldownTime>2</cooldownTime>
-				<linkedBodyParts>Teeth</linkedBodyParts>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<surpriseAttack>
 					<extraMeleeDamages>
 						<li>
 							<def>Stun</def>
 							<amount>20</amount>
 						</li>
+						</extraMeleeDamages>
 					</surpriseAttack>
-			</li>		
+			</li>
+		</tools>
+
 		</ThingDef>
 </Defs>

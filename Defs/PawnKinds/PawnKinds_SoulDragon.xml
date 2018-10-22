@@ -2,18 +2,18 @@
 <Defs>
 	<PawnKindDef parentName="AnimalKindBase">
 		<defName>TYR_SoulDragon</defName>
+		<race>TYR_SD_RACE</race>
 		<label>souldragon</label>
-		<labelPlurals>souldragons</labelPlurals>
-		<race>TYR_SD</race>
+		<labelPlural>souldragons</labelPlural>
 		<combatPower>50</combatPower>
 		<lifeStages>
-			<li>
+<!-- 			<li>
 				<bodyGraphicData>
 					<texPath>Textures/Things/Pawns/Animals/Soul_Dragon</texPath>
 					<drawSize>1</drawSize>
 				</bodyGraphicData>
-			</li>
-			<li>
+			</li> -->
+<!-- 			<li>
 				<bodyGraphicData>
 					<texPath>Textures/Things/Pawns/Animals/Soul_Dragon</texPath>
 					<drawSize>1.2</drawSize>
@@ -22,16 +22,17 @@
 						<offset>(0.0,-0.3)</offset>
 					</shadowData>
 				</bodyGraphicData>
-			</li>
+			</li> -->
 			<li>
 				<bodyGraphicData>
-					<texPath>Textures/Things/Pawns/Animals/Soul_Dragon</texPath>
-					<drawSize>1.6</drawSize>
+					<texPath>Things/Pawns/Animals/SoulDragon/SDSilver</texPath>
+					<drawSize>2</drawSize>
 					<shadowData>
 						<volume>(0.4,0.4,0.4)</volume>
-						<offset>(0.0,-0.2)</offset>
+						<offset>(0,0,-0.2)</offset>
 					</shadowData>
 				</bodyGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+</Defs>

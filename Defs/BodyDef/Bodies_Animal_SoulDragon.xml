@@ -10,8 +10,7 @@
 			<depth>Outside</depth>
 			<parts>
 				<li>
-					<def>TYR_Tail</def>
-					<customLabel>Tail</customLabel>
+					<def>Tail</def>
 					<coverage>0.10</coverage>
 					<groups>
 						<li>TailAttack</li>

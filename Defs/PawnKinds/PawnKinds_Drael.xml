@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<PawnKindDef parentName="OutlanderBase">
-		<defName>TYR_Drael</defName>
-		<race>Drael</race>
+		<defName>TYR_Drael_PK</defName>
+		<race>TYR_Drael</race>
 		<label>Drael</label>
 		<combatPower>30</combatPower>
 		<itemQuality>Normal</itemQuality>
