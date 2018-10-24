@@ -1,32 +1,62 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<PawnKindDef parentName="AnimalKindBase">
-		<defName>TYR_SoulDragon</defName>
+
+	<PawnKindDef ParentName="AnimalKindBase" Name="TYR_SD_BASE_KIND"  Abstract="True">
+		<combatPower>150</combatPower>
 		<race>TYR_SD_RACE</race>
-		<label>souldragon</label>
-		<labelPlural>souldragons</labelPlural>
-		<combatPower>50</combatPower>
+	</PawnKindDef>
+		
+	<PawnKindDef ParentName="TYR_SD_BASE_KIND">
+		<defName>TYR_SoulDragon_SILVER</defName>
+		<!-- <race>TYR_SD_RACE_SILVER</race> -->
+		<label>Silver Soul Dragon</label>
+		<labelPlural>Silver Soul Dragons</labelPlural>
 		<lifeStages>
-<!-- 			<li>
-				<bodyGraphicData>
-					<texPath>Textures/Things/Pawns/Animals/Soul_Dragon</texPath>
-					<drawSize>1</drawSize>
-				</bodyGraphicData>
-			</li> -->
-<!-- 			<li>
-				<bodyGraphicData>
-					<texPath>Textures/Things/Pawns/Animals/Soul_Dragon</texPath>
-					<drawSize>1.2</drawSize>
-					<shadowData>
-						<volume>(0.3,0.3,0.3)</volume>
-						<offset>(0.0,-0.3)</offset>
-					</shadowData>
-				</bodyGraphicData>
-			</li> -->
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawns/Animals/SoulDragon/SDSilver</texPath>
+					<texPath>Things/Pawns/Animals/SoulDragon/SD</texPath>
 					<drawSize>2</drawSize>
+					<color>(147,146,147)</color>
+					<shadowData>
+						<volume>(0.4,0.4,0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="TYR_SD_BASE_KIND">
+		<defName>TYR_SoulDragon_RED</defName>
+		<!-- <race>TYR_SD_RACE_RED</race> -->
+		<label>Red Soul Dragon</label>
+		<labelPlural>Red Soul Dragons</labelPlural>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawns/Animals/SoulDragon/SD</texPath>
+					<drawSize>2</drawSize>
+					<color>(184,22,22)</color>
+					<shadowData>
+						<volume>(0.4,0.4,0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="TYR_SD_BASE_KIND">
+		<defName>TYR_SoulDragon_BLACK</defName>
+		<!-- <race>TYR_SD_RACE_BLACK</race> -->
+		<label>Black Soul Dragon</label>
+		<labelPlural>Black Soul Dragons</labelPlural>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawns/Animals/SoulDragon/SD</texPath>
+					<drawSize>2</drawSize>
+					<color>(18,16,16)</color>
 					<shadowData>
 						<volume>(0.4,0.4,0.4)</volume>
 						<offset>(0,0,-0.2)</offset>

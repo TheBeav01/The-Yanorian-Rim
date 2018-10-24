@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="AnimalThingBase">
-		<defName>TYR_SD_RACE</defName>
-		<label>Soul_Dragon</label>
-		<description>Soul Dragons are an intelligent race of metal dragons. They bond with their Drael partners on birth, and do not part with them until their deaths.</description>
+	<ThingDef ParentName="AnimalThingBase" Name="TYR_SD_BASE_RACE" Abstract="True">
 		<statBases>
 			<MoveSpeed>4.5</MoveSpeed>
 			<MarketValue>1000</MarketValue>
@@ -89,4 +86,11 @@
 		</tools>
 
 		</ThingDef>
+		
+		<ThingDef ParentName = "TYR_SD_BASE_RACE">
+			<defName>TYR_SD_RACE</defName>
+			<label>Soul Dragon</label>
+			<description>Soul Dragons are an intelligent race of metal dragons. They bond with their Drael partners on birth, and do not part with them until their deaths.</description>
+		</ThingDef>
+		
 </Defs>
