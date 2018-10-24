@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<PawnKindDef parentName="OutlanderBase">
+	<PawnKindDef name="TYRDraelBase" parentName="OutlanderBase" Abstract="True">
 		<defName>TYR_Drael_PK</defName>
 		<race>TYR_Drael</race>
 		<label>Drael</label>
@@ -9,6 +9,7 @@
 		<backstoryCategories>
 			<li>Civil</li>
 		</backstoryCategories>
+		<invNutrition>2.1</invNutrition>
 		<apparelTags>
 		<li>TYD_DraelApparel</li>
 		</apparelTags>
@@ -17,4 +18,27 @@
 			<max>800</max>
 		</apparelMoney>
 	</PawnKindDef>
+	
+	<PawnKindDef parentName="TYRDraelBase">
+		<defName>TYR_Kingsman</defName>
+		<label>Kingsman</label>
+		<race>TYR_Drael</race>
+		<combatPower>60</combatPower>
+		<backstoryCategories>
+			<li>Civil</li>
+		</backstoryCategories>
+		<isFighter>true</isFighter>
+		<gearHealthRange>
+			<min>0.8</min>
+			<max>1</max>
+		</gearHealthRange>
+		<weaponTags>
+			<li>MedivalMeleeBasic</li>
+		</weaponTags>
+		<weaponMoney>
+			<min>200</min>
+			<max>450</max>
+		</weaponMoney>
+	</PawnKindDef>
+	
 </Defs>

@@ -2,14 +2,29 @@
 <Defs>
 	<FactionDef>
 		<defName>TYR_OldOrder</defName>
-		<label>The Old Order</defName>
+		<label>The Old Order</label>
 		<listOrderPriority>20</listOrderPriority>
-		<pawnsPlural>the old order</pawnSingular>
+		<pawnsPlural>the old order</pawnsPlural>
 		<settlementGenerationWeight>0.01</settlementGenerationWeight>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<canMakeRandomly>false</canMakeRandomly>
+		<leaderTitle>King</leaderTitle>
 		<canSiege>false</canSiege>
 		<canStageAttacks>false</canStageAttacks>
 		<expandingIconTexture>World/Expanding/TYR_OldOrder</expandingIconTexture>
+		<fixedName>Drae Lanor</fixedName>
+		<rescueesCanJoin>true</rescueesCanJoin>
+		<techLevel>Industrial</techLevel>
+		<backstoryCategories>
+			<li>Civil</li>
+		</backstoryCategories>
+		<startingGoodwill>
+			<min>0</min>
+			<max>0</max>
+		</startingGoodwill>
+		<hairTags>	
+			<li>Rural</li>
+		</hairTags>
+		
 	</FactionDef>
 </Defs>
