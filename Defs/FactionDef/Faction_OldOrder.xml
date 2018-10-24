@@ -12,6 +12,7 @@
 		<canSiege>false</canSiege>
 		<canStageAttacks>false</canStageAttacks>
 		<expandingIconTexture>World/Expanding/TYR_OldOrder</expandingIconTexture>
+		<homeIconPath>World/Expanding/ZoomedInBase</homeIconPath>
 		<fixedName>Drae Lanor</fixedName>
 		<rescueesCanJoin>true</rescueesCanJoin>
 		<techLevel>Industrial</techLevel>
