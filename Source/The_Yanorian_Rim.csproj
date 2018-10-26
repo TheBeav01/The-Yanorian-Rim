@@ -56,6 +56,7 @@
     <None Include="..\Patches\**" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SoulDragonSpawnHelper.cs" />
     <Compile Include="The_Yanorian_Rim.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

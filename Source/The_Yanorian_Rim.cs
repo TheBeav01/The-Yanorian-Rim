@@ -24,7 +24,12 @@ namespace The_Yanorian_Rim
 		{
 			static void Postfix(PawnGenerationRequest request)
 			{
-                Log.Message("Pawn Generated!");
+
+               SoulDragonSpawnHelper sd = new SoulDragonSpawnHelper(request);
+                if(sd.exec() == false)
+                {
+                    Log.Message("SD Spawn not implemented yet");
+                }
 			}
 		}
     }

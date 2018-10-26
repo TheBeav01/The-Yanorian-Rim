@@ -33,7 +33,7 @@
 			<max>1</max>
 		</gearHealthRange>
 		<weaponTags>
-			<li>MedivalMeleeBasic</li>
+			<li>MedievalMeleeBasic</li>
 		</weaponTags>
 		<weaponMoney>
 			<min>200</min>
