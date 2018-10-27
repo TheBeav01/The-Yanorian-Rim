@@ -19,7 +19,7 @@
 		</apparelMoney>
 	</PawnKindDef>
 	
-	<PawnKindDef parentName="TYRDraelBase">
+	<PawnKindDef name="KingsmanBase" parentName="TYRDraelBase">
 		<defName>TYR_Kingsman</defName>
 		<label>Kingsman</label>
 		<race>TYR_Drael</race>
@@ -39,6 +39,32 @@
 			<min>200</min>
 			<max>450</max>
 		</weaponMoney>
+		<apparelTags>
+		<li>TYD_DraelApparel</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>600</min>
+			<max>800</max>
+		</apparelMoney>
+
+	</PawnKindDef>
+	
+	<PawnKindDef parentName="KingsmanBase">
+		<defName>TYR_KingsmanTrader</defName>
+		<label>Draelish Trader</label>
+		<race>TYR_Drael</race>
+		<trader>true</trader>
+		<combatPower>60</combatPower>
+		<backstoryCategories>
+			<li>Civil</li>
+		</backstoryCategories>
+		<apparelTags>
+		<li>TYD_DraelApparel</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>800</min>
+			<max>1600</max>
+		</apparelMoney>
 	</PawnKindDef>
 	
 </Defs>

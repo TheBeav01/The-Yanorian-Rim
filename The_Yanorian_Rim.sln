@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The_Yanorian_Rim", "Source\The_Yanorian_Rim.csproj", "{D7D21B4A-1DA7-41D8-B202-C58CA8FA62AA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{43CEF0A5-16DF-4339-97F7-4A4B95EC2EC5}"
+	ProjectSection(SolutionItems) = preProject
+		Defs\HediffDef\Hediff_Bond.xml = Defs\HediffDef\Hediff_Bond.xml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +20,6 @@ Global
 		{D7D21B4A-1DA7-41D8-B202-C58CA8FA62AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7D21B4A-1DA7-41D8-B202-C58CA8FA62AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7D21B4A-1DA7-41D8-B202-C58CA8FA62AA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DE5B7748-333A-428F-BCA9-4DB67FB289A3}.Debug|Any CPU.ActiveCfg = Release|x86
-		{DE5B7748-333A-428F-BCA9-4DB67FB289A3}.Release|Any CPU.ActiveCfg = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

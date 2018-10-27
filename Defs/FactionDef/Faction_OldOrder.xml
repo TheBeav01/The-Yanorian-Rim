@@ -26,6 +26,48 @@
 		<hairTags>	
 			<li>Rural</li>
 		</hairTags>
-		
+		<caravanTraderKinds>
+		  <li>Caravan_Outlander_Exotic</li>
+		  <li>Caravan_Outlander_BulkGoods</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+		  <li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<allowedArrivalTemperatureRange>
+			<min>-45</min>
+			<max>45</max>
+		</allowedArrivalTemperatureRange>
+		<maxPawnCostPerTotalPointsCurve>
+		  <points>
+			<li>(0,35)</li>
+			<li>(70, 50)</li>
+			<li>(700, 100)</li>
+			<li>(1300, 150)</li>
+			<li>(100000, 10000)</li>
+		  </points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Peaceful</kindDef>
+					<options>
+						<TYR_Kingsman>5</TYR_Kingsman>
+						<TYR_SoulDragon_SILVER>5</TYR_SoulDragon_SILVER>
+					</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+						<guards>
+							<TYR_Kingsman>5</TYR_Kingsman>
+							<TYR_SoulDragon_SILVER>5</TYR_SoulDragon_SILVER>
+						</guards>
+						<carriers>
+							<Muffalo>4</Muffalo>
+							<Alpaca>2</Alpaca>
+						</carriers>
+						<traders>
+							<TYR_KingsmanTrader>1</TYR_KingsmanTrader>
+						</traders>
+			</li>
+		</pawnGroupMakers>
 	</FactionDef>
 </Defs>
