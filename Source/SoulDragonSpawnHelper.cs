@@ -8,10 +8,13 @@ namespace The_Yanorian_Rim
 {
     public class SoulDragonSpawnHelper
     {
-        private PawnGenerationRequest req;
-        private PawnKindDef kindDef;
-        private string pawnRace;
-        private IList<string> races;
+        public PawnGenerationRequest req { get; set; }
+        public PawnKindDef kindDef { get; set; }
+        public Boolean gameHasStarted { get; set; }
+        public SoulDragonSpawnHelper()
+        {
+            gameHasStarted = false;
+        }
         public SoulDragonSpawnHelper(PawnGenerationRequest request)
         {
             req = request;
@@ -21,11 +24,11 @@ namespace The_Yanorian_Rim
         public Boolean exec()
         {
             //TODO: Check if Drael race and spawn bonded dragon w/ hediff
+            //TODO: Get if the pawn is downed or dead.
             if(kindDef.race.ToString() == "")
             {
 
             }
-            Log.Message("Race: " + kindDef.race.ToString());
             return false;
         }
     }

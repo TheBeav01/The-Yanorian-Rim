@@ -20,17 +20,42 @@ namespace The_Yanorian_Rim
 		[HarmonyPatch(typeof(PawnGenerator))]
 		[HarmonyPatch("GeneratePawn")]
 		[HarmonyPatch(new Type[] { typeof(PawnGenerationRequest) })]
-        class TestPatch
+        class PawnGenPatch
 		{
-			static void Postfix(PawnGenerationRequest request)
+			static void Postfix(Pawn __result, PawnGenerationRequest request)
 			{
+                Pawn res = __result;
+                SoulDragonSpawnHelper sd = new SoulDragonSpawnHelper(request);
+                string progState = Current.ProgramState.ToString();
 
-               SoulDragonSpawnHelper sd = new SoulDragonSpawnHelper(request);
-                if(sd.exec() == false)
+                //First time load. Does not fire upon loading a save, I think.
+                if (progState.Equals("MapInitializing"))
                 {
-                    Log.Message("SD Spawn not implemented yet");
+                    Log.Message("State: " + Current.ProgramState + " Pawn ID: " + res.thingIDNumber);
+                    Log.Message("Executing first time SD spawning");
+                    if(sd.exec() == false)
+                    {
+                        Log.Warning("SD spawn not implemented yet");
+                    }
+
+                }
+                //Game in progress
+                else if(progState.Equals("Playing"))
+                {
+                    //Do nothing?
                 }
 			}
 		}
+        /*[HarmonyPatch(typeof(Game))]
+        [HarmonyPatch("InitNewGame")]
+        
+        class InitThing
+        {
+            static void Postfix()
+            {
+                Log.Message("Works?");
+                
+            }
+        } */
     }
 }
